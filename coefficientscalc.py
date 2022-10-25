@@ -6,8 +6,8 @@ def euler(exponent): #calculates e^(exponent*i) using euler's formula
     return complex(math.cos(exponent),math.sin(exponent))
 with open("svgpoints2.json","r") as pointsjson:
     points = json.load(pointsjson)
-dx = 1/913 #the difference in input between each point (ie. 1/(total number of points-1))
-coefficientrange = [-500,500] #the range of coefficients to compute (inclusive)
+dx = 1/345 #the difference in input between each point (ie. 1/(total number of points-1))
+coefficientrange = [-100,100] #the range of coefficients to compute (inclusive)
 complexpoints = []
 for point in points:
     complexpoints.append(complex(float(point[0]),float(point[1])))
